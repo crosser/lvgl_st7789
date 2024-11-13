@@ -1,0 +1,8 @@
+# This file was generated using idf.py save-defconfig. It can be edited manually.
+# Espressif IoT Development Framework (ESP-IDF) 5.3.1 Project Minimal Configuration
+#
+CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y
+CONFIG_LV_FONT_MONTSERRAT_14=n
+CONFIG_LV_FONT_DEFAULT_MONTSERRAT_28=y
+CONFIG_LV_USE_ST7789=y
+CONFIG_LV_USE_GENERIC_MIPI=n
