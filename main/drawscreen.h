@@ -1,1 +1,1 @@
-void drawscreen(lv_display_t* disp);
+void drawscreen(lv_obj_t* scr);

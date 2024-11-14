@@ -119,9 +119,12 @@ void app_main(void)
 	lv_display_set_buffers(disp, buf[0], buf[1], SEND_BUF_SIZE,
 		LV_DISPLAY_RENDER_MODE_PARTIAL);
 	lv_disp_set_rotation(disp, LV_DISPLAY_ROTATION_90);
+	lv_obj_t *scr = lv_display_get_screen_active(disp);
 
+	ESP_LOGI(TAG, "Display size %lu x %lu", lv_obj_get_width(scr),
+						lv_obj_get_height(scr));
 	ESP_LOGI(TAG, "Draw on screen");
-	drawscreen(disp);
+	drawscreen(scr);
 
 	esp_timer_handle_t periodic_timer;
 	ESP_ERROR_CHECK(esp_timer_create(

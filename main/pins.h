@@ -1,3 +1,6 @@
+#define S_WIDTH  240
+#define S_HEIGHT 135
+
 #define TFT_WIDTH  240
 #define TFT_HEIGHT 320
 
